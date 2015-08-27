@@ -48,7 +48,6 @@ public class BackupThread extends Thread {
             System.out.println(ex.toString());
             return false;                                   //Goes something wrong false is returned!
         }
-
         return true;
     }
 
