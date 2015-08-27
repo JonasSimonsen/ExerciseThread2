@@ -39,7 +39,7 @@ public class BackupThread extends Thread {
         File file = new File(userDir + "/backup.txt");
         try {
             writer = new FileWriter(file, false);
-            writer.write(lines.toString() + "\n");      //Each String object is written as a line in file.
+            writer.write(lines.toString() + "\n");          //Each String object is written as a line in file.
             System.out.println(lines.size());
             System.out.println("Written to file");
             writer.close();                                 //Closing the file.
