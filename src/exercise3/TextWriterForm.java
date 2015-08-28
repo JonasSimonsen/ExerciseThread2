@@ -23,8 +23,6 @@ public class TextWriterForm extends javax.swing.JFrame {
    */
   public TextWriterForm() {
     initComponents();
-    BackupThread back = new BackupThread(lines);
-    back.start();
     txtNewLine.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
@@ -106,7 +104,6 @@ public class TextWriterForm extends javax.swing.JFrame {
   private void addLine() {
     lines.add(txtNewLine.getText());
     allText.append(String.format(txtNewLine.getText()+"%n"));
-    
     txtNewLine.setText("");
   }
 
