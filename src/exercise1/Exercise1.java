@@ -9,10 +9,15 @@ package exercise1;
  *
  * @author jonassimonsen
  */
-public class Task1 {
+public class Exercise1 {
     /**
      * @param args the command line arguments
      */
+    
+//  Forklaring af resultatet?
+//  Beregningen er selvfølgelig væsentlige hurtigere ved paralel ekskevering end ved
+//  sekventiel hvor trådende venter på hinanden bliver færdige.
+    
     public static void main(String[] args) throws InterruptedException {
         // TODO code application logic here
         System.out.println("Available processors = " + Runtime.getRuntime().availableProcessors());
